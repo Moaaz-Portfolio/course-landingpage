@@ -1,0 +1,37 @@
+.instructor{
+    &__container{
+        @extend .hero__container  !optional;
+    }
+    &__left{
+        @extend .hero__left !optional;
+        text-align: left;
+        align-items: center;
+
+        @media (max-width: 1024px) {
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            align-items: center;
+            text-align: center;
+        }
+
+        .instructor__title{
+            text-align: center; /* Ensure title is centered */
+            margin: 0;
+        }
+        .instructor__subtitle {
+            @extend .hero__subtitle !optional;
+            text-align: center; /* Align subtitle with the title */
+            align-items: center;
+            margin-top: 1rem;
+
+        }
+    }
+    &__right{
+        @extend .hero__right !optional;
+    }
+    &__title {
+        text-align: center; /* Ensure title is centered */
+    }
+}

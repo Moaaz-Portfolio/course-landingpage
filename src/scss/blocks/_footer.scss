@@ -1,0 +1,108 @@
+@use '../base/variables' as variables;
+
+.footer {
+    background: #faf6ff;
+    padding: 0rem 5rem 5rem 5rem;
+    @media (max-width: 768px) {
+        padding: 2rem 1.5rem;
+    }
+    &__container {
+        max-width: 100%;
+        margin: 0 auto;
+
+
+    }
+
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+        gap: 1rem;
+    }
+
+    &__logo {
+        width: 140px;
+    }
+
+    &__subscribe {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+        max-width: 500px;
+        @media (max-width: 768px) {
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        flex: 1;
+        border: none;
+        border-radius: 999px;
+        padding: 0.8rem 1rem;
+        outline: none;
+        font-size: 0.9rem;
+        color: #333;
+        background: #fff;
+        box-shadow: 0 0 0 1px #eee;
+    }
+
+    &__btn {
+        @extend .button--primary !optional;
+            /* Reuse styles from the global button--primary class */
+    }
+
+    &__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__menu li {
+        margin-bottom: 0.5rem;
+    }
+
+    &__menu a {
+        color: #333;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+            color: variables.$primary-color;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__bottom {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+        }
+
+        &__top {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__subscribe {
+            justify-content: center;
+        }
+    }
+}

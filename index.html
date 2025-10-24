@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курс по программированию</title>
+<link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__container">
+    <div class="header__left">
+        <a href="#" class="header__logo">
+          <picture>
+            <source media="(max-width: 768px)" srcset="src/assets/img/Logo_mobile.svg">
+            <img src="src/assets/img/Logo.svg" alt="Logo">
+          </picture>
+        </a>
+
+    </div>
+
+    <div class="header__center">
+      <nav class="header__nav">
+        <a href="#hero" class="header__link">Главная</a>
+        <a href="#learn" class="header__link">Преимущества</a>
+        <a href="#testimonials" class="header__link">Отзывы</a>
+        <a href="#footer" class="header__link">Контакты</a>
+      </nav>
+    </div>
+
+    <div class="header__right">
+        <button class="header__btn">Записаться</button>
+      <button class="header__toggle" aria-label="menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__container">
+        <div class="hero__left">
+			<h1 class="hero__title">Освойте no-code инструменты уже сегодня.</h1>
+			<p class="hero__subtitle">Создавайте красивые сайты в Webflow вместе с Flowbase. Клонируйте бесплатно и начните создавать сайт уже сегодня.</p>
+			<button class="hero__cta button button--primary">Записаться</button>
+			<div class="hero__proof">
+				<div class="hero__avatars">
+				<img src="src/assets/img/avatar1.png" alt="Student 1" class="hero__avatar" />
+				<img src="src/assets/img/avatar2.png" alt="Student 2" class="hero__avatar" />
+				<img src="src/assets/img/avatar3.png" alt="Student 3" class="hero__avatar" />
+				</div>
+				<p class="hero__proof-text">
+					Присоединяйтесь к более <strong class="hero__proof-text-number">4,000+</strong> студентам
+				</p>
+			</div>
+        </div>
+		<div class="hero__right">
+			<div class="hero__image-wrapper">
+				<img src="src/assets/img/hero-image.png" alt="Hero Image" class="hero__image">
+				<button class="hero__play-button" aria-label="Play video">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="48" height="48">
+						<path d="M8 5v14l11-7z"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+    </section>
+	    <section class="stats" id="stats">
+      <div class="stats__container">
+        <div class="stats__item">
+          <h2 class="stats__title">4,000+</h2>
+          <p class="stats__subtitle">Студентов уже обучаются</p>
+        </div>
+        <div class="stats__item">
+          <h2 class="stats__title">98%</h2>
+          <p class="stats__subtitle">Успеваемость студентов</p>
+        </div>
+        <div class="stats__item">
+          <h2 class="stats__title">10,000+</h2>
+          <p class="stats__subtitle">Часов видеоуроков</p>
+        </div>
+      </div>
+    </section>
+	<div class="decorative-circles">
+		<div class="circle circle--pink"></div>
+		<div class="circle circle--orange-small"></div>
+		<div class="circle circle--orange-large"></div>
+	</div>
+<section class="learn" id="learn">
+	<div class="learn__container">
+		<h2 class="learn__title">Чему вы научитесь</h2>
+		<p class="learn__subtitle">
+	Создавайте красивые сайты в Webflow вместе с Flowbase. Клонируйте бесплатно и начните создавать сайт уже сегодня.
+    </p>
+
+    <div class="learn__list">
+      <div class="learn__item">
+        <div class="learn__info">
+          <div class="learn__icon">
+            <img src="src/assets/img/lesson.svg" alt="Иконка урока" />
+          </div>
+          <div class="learn__text">
+			<h3 class="learn__name">Анализ пользовательских данных</h3>
+            <p class="learn__desc">Для кого вы разрабатываете? Как они будут использовать ваш дизайн? Создание пользовательских персон может ответить на эти вопросы.</p>
+          </div>
+        </div>
+        <div class="learn__meta">
+          <span class="learn__meta-item-videos">6 видео</span>
+		   <span class="learn__meta-item-seperator">|</span>
+          <span class="learn__meta-item-duration">4.5 часа</span>
+        </div>
+      </div>
+
+      <div class="learn__item">
+        <div class="learn__info">
+          <div class="learn__icon">
+            <img src="src/assets/img/lesson.svg" alt="Иконка урока" />
+          </div>
+          <div class="learn__text">
+            <h3 class="learn__name">Пользовательская персона</h3>
+            <p class="learn__desc">Для кого вы разрабатываете? Как они будут использовать ваш дизайн? Создание пользовательских персон может ответить на эти вопросы.</p>
+          </div>
+        </div>
+        <div class="learn__meta">
+          <span class="learn__meta-item-videos">6 видео</span>
+			<span class="learn__meta-item-seperator">|</span>
+          <span class="learn__meta-item-duration">4.5 часа</span>
+        </div>
+      </div>
+
+      <div class="learn__item">
+        <div class="learn__info">
+          <div class="learn__icon">
+            <img src="src/assets/img/lesson.svg" alt="Иконка урока" />
+          </div>
+          <div class="learn__text">
+            <h3 class="learn__name">Прототипирование</h3>
+            <p class="learn__desc">Для кого вы разрабатываете? Как они будут использовать ваш дизайн? Создание пользовательских персон может ответить на эти вопросы.</p>
+          </div>
+        </div>
+        <div class="learn__meta">
+          <span class="learn__meta-item-videos">6 видео</span>
+		  <span class="learn__meta-item-seperator">|</span>
+          <span class="learn__meta-item-duration">4.5 часа</span>
+        </div>
+      </div>
+
+      <div class="learn__item">
+        <div class="learn__info">
+          <div class="learn__icon">
+            <img src="src/assets/img/lesson.svg" alt="Иконка урока" />
+          </div>
+          <div class="learn__text">
+            <h3 class="learn__name">Сторибординг</h3>
+            <p class="learn__desc">Для кого вы разрабатываете? Как они будут использовать ваш дизайн? Создание пользовательских персон может ответить на эти вопросы.</p>
+          </div>
+        </div>
+        <div class="learn__meta">
+          <span class="learn__meta-item-videos">6 видео</span>
+			  <span class="learn__meta-item-seperator">|</span>
+
+          <span class="learn__meta-item-duration">4.5 часа</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="instructor" id="instructor">
+      <div class="instructor__container">
+        <div class="instructor__left">
+			<h1 class="instructor__title">Привет, я Дэвид, ваш инструктор курса.</h1>
+			<p class="instructor__subtitle">Создавайте красивые сайты в Webflow вместе с Flowbase. Клонируйте бесплатно и начните создавать сайт уже сегодня.</p>
+
+        </div>
+		<div class="instructor__right">
+			<div class="instructor__image-wrapper">
+				<img src="src/assets/img/instructor.png" alt="Instructor Image" class="instructor__image">
+			</div>
+		</div>
+    </section>
+    <section class="testimonials" id="testimonials">
+  <div class="testimonials__container">
+    <h2 class="testimonials__title">Что говорят мои студенты</h2>
+    <p class="testimonials__subtitle">
+      Создавайте уникальные лендинги с Shades, которые конвертируют больше посетителей, чем любой сайт — без необходимости программирования.
+    </p>
+
+    <div class="testimonials__list">
+      <div class="testimonials__item">
+        <p class="testimonials__text">
+          «Я дождался завершения курса, чтобы оценить его. Это был мой первый опыт работы с Python, я пользователь Excel и VBA. Преподаватель отлично объясняет материал, всё очень структурировано и организовано. Очень рекомендую!»
+        </p>
+        <div class="testimonials__author">
+          <img src="src/assets/img/avatar1.png" alt="Хенк Фортейн" class="testimonials__avatar" />
+          <div class="testimonials__info">
+            <h4 class="testimonials__name">Хенк Фортейн</h4>
+            <p class="testimonials__role">Основатель Crips</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials__item">
+        <p class="testimonials__text">
+          «Я дождался завершения курса, чтобы оценить его. Это был мой первый опыт работы с Python, я пользователь Excel и VBA. Преподаватель отлично объясняет материал, всё очень структурировано и организовано. Очень рекомендую!»
+        </p>
+        <div class="testimonials__author">
+          <img src="src/assets/img/avatar2.png" alt="Опи Веатана" class="testimonials__avatar" />
+          <div class="testimonials__info">
+            <h4 class="testimonials__name">Опи Веатана</h4>
+            <p class="testimonials__role">Основатель Crips</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials__item">
+        <p class="testimonials__text">
+          «Я дождался завершения курса, чтобы оценить его. Это был мой первый опыт работы с Python, я пользователь Excel и VBA. Преподаватель отлично объясняет материал, всё очень структурировано и организовано. Очень рекомендую!»
+        </p>
+        <div class="testimonials__author">
+          <img src="src/assets/img/avatar3.png" alt="Адрианна К." class="testimonials__avatar" />
+          <div class="testimonials__info">
+            <h4 class="testimonials__name">Адриан К.</h4>
+            <p class="testimonials__role">Основатель Crips</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta" id="cta">
+    <div class="cta__content">
+        <span class="cta__badge">ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ В ТЕЧЕНИЕ 30 ДНЕЙ</span>
+        <h2 class="cta__title">Готовы изучать UX-дизайн у эксперта?</h2>
+        <button class="cta__button">Начать обучение</button>
+    </div>
+    <div class="cta__circle cta__circle--big"></div>
+    <div class="cta__circle cta__circle--small"></div>
+</section>
+  </main>
+<footer class="footer" id="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <img src="/src/assets/img/Logo.svg" alt="Логотип" class="footer__logo" />
+            <div class="footer__subscribe">
+                <input
+                    type="email"
+                    placeholder="Будьте в курсе - подпишитесь на рассылку"
+                    class="footer__input"
+                />
+                <button class="footer__btn">Подписаться</button>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__menu">
+                <h4 class="footer__title">Меню помощи</h4>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Особенности</a></li>
+                    <li><a href="#">Как это работает</a></li>
+                    <li><a href="#">Карьера</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__menu">
+                <h4 class="footer__title">О компании</h4>
+                <ul>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Помощь и поддержка</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Условия использования</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__menu">
+                <h4 class="footer__title">Продукты</h4>
+                <ul>
+                    <li><a href="#">Основная целевая страница</a></li>
+                    <li><a href="#">Alpha Dashboard Pro</a></li>
+                    <li><a href="#">Karnel Admin Dashboard</a></li>
+                    <li><a href="#">Gray UI Kit</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

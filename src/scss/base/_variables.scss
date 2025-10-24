@@ -1,0 +1,17 @@
+$background-color: #fff;
+$font-family-base: 'Helvetica Neue', Arial, sans-serif;
+$text-color: #001A49;
+$text-color-highlight: #9F07FF;
+$secondary-text-color: #4F596A;
+$primary-color-1: #CD10FF;
+$primary-color-2: #9F06FF;
+
+// Primary color (single color used for color functions like darken)
+$primary-color: $primary-color-1;
+
+// Gradient using the two color stops
+$primary-gradient: linear-gradient(-108deg, $primary-color-2, $primary-color-1);
+
+$decorative-orange-color-1: #FFD7A9;
+$decorative-orange-color-2: #FFAE70;
+$decorative-orange-gradient: linear-gradient(-108deg, $decorative-orange-color-1, $decorative-orange-color-2);

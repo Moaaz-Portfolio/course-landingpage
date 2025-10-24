@@ -1,0 +1,43 @@
+@use './scss/base/variables' as variables;
+@use './scss/base/decorative' as decorative;
+
+@use './scss/globals/cta_button' as cta_button;
+
+@use './scss/blocks/header' as header;
+@use './scss/blocks/hero' as hero;
+@use './scss/blocks/stats' as stats;
+@use './scss/blocks/learn' as learn;
+@use './scss/blocks/instructor' as instructor;
+@use './scss/blocks/testimonials' as testimonials;
+@use './scss/blocks/cta' as cta;
+@use './scss/blocks/footer' as footer;
+
+
+body {
+        margin: 0;
+        padding: 0;
+        font-family: variables.$font-family-base;
+        background-color: variables.$background-color;
+        color: variables.$text-color;
+}
+
+/* reset box-sizing to make width/padding calculations predictable */
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+/* Make images and svgs responsive by default to avoid overflow on small screens */
+img, svg {
+        max-width: 100%;
+        height: auto;
+        display: block;
+}
+
+hr.divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    max-width: 1200px;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

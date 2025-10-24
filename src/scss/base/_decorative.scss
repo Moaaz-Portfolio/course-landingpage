@@ -1,0 +1,70 @@
+@use './variables' as variables;
+
+.decorative-circles {
+    position: relative;
+    z-index: -1;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    .circle {
+        position: absolute;
+
+        &--pink {
+            background-image: variables.$primary-gradient;
+            width: 288px;
+            height: 288px;
+            bottom: 25px;
+            left: -25px;
+            border-radius: 50%;
+            @media (max-width: 1024px) {
+                width: 200px;
+                height: 200px;
+                bottom: -30px;
+            }
+            @media (max-width: 1920px) {
+                width: 200px;
+                height: 200px;
+                bottom: 10px;
+                left: -90px;
+            }
+        }
+
+        &--orange-large {
+            background-image: variables.$decorative-orange-gradient;
+            width: 100px;
+            height: 200px;
+            top: -30px;
+            right: 0px;
+            border-bottom-left-radius: 100px;
+            border-top-left-radius: 100px;
+            @media (max-width: 1024px) {
+                width: 86px;
+                height: 172px;
+                top: -20px;
+            }
+            @media (max-width: 1920px) {
+                width: 100px;
+                height: 200px;
+                top: 70px;
+            }
+        }
+        &--orange-small {
+            background-image: variables.$decorative-orange-gradient;
+            width: 86px;
+            height: 86px;
+            bottom: 50px;
+            left: 200px;
+            border-radius: 50%;
+            @media (max-width: 1024px) {
+                left: 100px;
+                bottom: 0px;
+            }
+            @media (max-width: 1920px) {
+                left: 55px;
+                bottom: 50px;
+            }
+        }
+    }
+}
