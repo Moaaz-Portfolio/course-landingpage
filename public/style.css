@@ -162,6 +162,21 @@
   color: #CD10FF;
 }
 .header__btn {
+  background: linear-gradient(-108deg, #9F06FF, #CD10FF);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+.header__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(87, 0, 255, 0.3);
+}
+.header__btn {
   /* Reuse styles from the global button--primary class */
 }
 @media (max-width: 768px) {
@@ -385,7 +400,21 @@
   }
 }
 .hero__cta {
-  /* Reuse styles from the global button--primary class */
+  background: linear-gradient(-108deg, #9F06FF, #CD10FF);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+.hero__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(87, 0, 255, 0.3);
+}
+.hero__cta {
   align-self: center;
   margin: 2rem 0rem;
 }
@@ -804,7 +833,21 @@
   margin: 1.5rem 0;
 }
 .cta__button {
-  /* Reuse styles from the global button--primary class */
+  background: linear-gradient(-108deg, #9F06FF, #CD10FF);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+.cta__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(87, 0, 255, 0.3);
+}
+.cta__button {
   margin: 2rem 0rem;
 }
 .cta__circle {
@@ -818,6 +861,7 @@
   background: linear-gradient(-108deg, #9F06FF, #CD10FF);
   right: -100px;
   top: 100px;
+  padding: auto;
 }
 @media (max-width: 768px) {
   .cta__circle--big {
@@ -891,7 +935,19 @@
   box-shadow: 0 0 0 1px #eee;
 }
 .footer__btn {
-  /* Reuse styles from the global button--primary class */
+  background: linear-gradient(-108deg, #9F06FF, #CD10FF);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+.footer__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(87, 0, 255, 0.3);
 }
 .footer__bottom {
   display: flex;
