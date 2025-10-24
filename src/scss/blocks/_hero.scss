@@ -1,4 +1,5 @@
 @use '../base/variables' as variables;
+@use '../globals/cta_button' as cta_button;
 
 .hero {
     &__container {
@@ -158,7 +159,7 @@
     }
 
     &__cta {
-        @extend .button--primary !optional; /* Reuse styles from the global button--primary class */
+        @include cta_button.button-primary;
         align-self: center;
         margin: 2rem 0rem;
         @media (max-width: 768px) {

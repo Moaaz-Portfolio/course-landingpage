@@ -1,5 +1,5 @@
 @use '../base/variables' as variables;
-
+@use '../globals/cta_button' as cta_button;
 .cta {
     position: relative;
     background: #fff;
@@ -44,8 +44,7 @@
     }
 
     &__button {
-        @extend .button--primary !optional;
-        /* Reuse styles from the global button--primary class */
+        @include cta_button.button-primary;
         margin: 2rem 0rem;
     }
 
@@ -60,6 +59,7 @@
             background: variables.$primary-gradient;
             right: -100px;
             top: 100px;
+            padding: auto;
 
             @media (max-width: 768px) {
                 right: -150px;

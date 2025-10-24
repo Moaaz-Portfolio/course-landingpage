@@ -1,4 +1,5 @@
 @use '../base/variables' as variables;
+@use '../globals/cta_button' as cta_button;
 
 .header {
     position: sticky;
@@ -78,7 +79,7 @@
     }
 
     &__btn {
-        @extend .button--primary !optional;
+        @include cta_button.button-primary;
         /* Reuse styles from the global button--primary class */
         @media (max-width: 768px) {
             display: none;

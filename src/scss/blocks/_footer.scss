@@ -1,5 +1,5 @@
 @use '../base/variables' as variables;
-
+@use '../globals/cta_button' as cta_button;
 .footer {
     background: #faf6ff;
     padding: 0rem 5rem 5rem 5rem;
@@ -51,8 +51,7 @@
     }
 
     &__btn {
-        @extend .button--primary !optional;
-            /* Reuse styles from the global button--primary class */
+        @include cta_button.button-primary;
     }
 
     &__bottom {

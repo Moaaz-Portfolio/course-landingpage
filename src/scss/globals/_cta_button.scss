@@ -1,6 +1,6 @@
 @use '../base/variables' as variables;
 
-.button--primary {
+@mixin button-primary {
     background: variables.$primary-gradient;
     color: #fff;
     border: none;
@@ -15,4 +15,8 @@
         transform: translateY(-2px);
         box-shadow: 0 8px 20px rgba(87, 0, 255, 0.3);
     }
+}
+
+.button--primary {
+    @include button-primary;
 }
