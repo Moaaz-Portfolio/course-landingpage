@@ -62,7 +62,7 @@
         &--open {
             transform: translateY(0);
             border-bottom: 1px solid #c9c9c9;
-            border-radius: 1rem;
+            border-radius: 0rem 0rem 1rem 1rem;
         }
     }
 
