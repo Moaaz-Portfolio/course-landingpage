@@ -3,6 +3,9 @@
 ## Overview
 This project is a responsive landing page designed to showcase a programming course. It is built using modern web development practices, including SCSS/SASS for styling and the BEM (Block Element Modifier) methodology for structuring CSS classes.
 
+The layout is inspired by a [Figma community design](https://www.figma.com/design/YV1dZJre0rERsAFN9Vdvzf/Course-Template-%F0%9F%9F%A3-by-Flowbase.co--Community-?node-id=0-1&p=f&t=qpBxN6nyvWVaMUTj-0),  
+but customized and restructured for better responsiveness and code scalability.
+
 ## Screenshots
 
 ### Desktop Version
