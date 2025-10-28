@@ -149,7 +149,7 @@
 .header__nav--open {
   transform: translateY(0);
   border-bottom: 1px solid #c9c9c9;
-  border-radius: 1rem;
+  border-radius: 0rem 0rem 1rem 1rem;
 }
 .header__link {
   color: #001A49;
@@ -238,7 +238,7 @@
   }
 }
 
-.hero__container {
+.hero__container, .instructor__container {
   max-width: 100%;
   margin: 5rem auto 10rem auto;
   padding: 1.5rem;
@@ -249,21 +249,21 @@
   gap: 2rem;
 }
 @media (max-width: 1920px) {
-  .hero__container {
+  .hero__container, .instructor__container {
     padding: 5rem;
     margin: 2.5rem auto;
     gap: 2.5rem;
   }
 }
 @media (max-width: 1440px) {
-  .hero__container {
+  .hero__container, .instructor__container {
     padding: 2rem;
     margin: 4rem auto;
     gap: 2rem;
   }
 }
 @media (max-width: 1024px) {
-  .hero__container {
+  .hero__container, .instructor__container {
     padding: 1rem;
     margin: 3rem auto;
     flex-direction: column;
@@ -271,14 +271,14 @@
   }
 }
 @media (max-width: 768px) {
-  .hero__container {
+  .hero__container, .instructor__container {
     flex-direction: column;
     padding: 1.5rem;
     margin: 2rem auto;
     align-items: center;
   }
 }
-.hero__right {
+.hero__right, .instructor__right {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -286,7 +286,7 @@
   margin: 2rem 0;
 }
 @media (max-width: 768px) {
-  .hero__right {
+  .hero__right, .instructor__right {
     margin: 0;
   }
 }
@@ -328,7 +328,7 @@
   width: 32px;
   height: 32px;
 }
-.hero__left {
+.hero__left, .instructor__left {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -336,7 +336,7 @@
   align-items: flex-start;
 }
 @media (max-width: 768px) {
-  .hero__left {
+  .hero__left, .instructor__left {
     align-items: center;
   }
 }
@@ -370,7 +370,7 @@
     font-size: 2.5rem;
   }
 }
-.hero__subtitle {
+.hero__subtitle, .instructor__left .instructor__subtitle {
   font-size: 1.25rem;
   text-align: center;
   align-self: center;
@@ -378,24 +378,24 @@
   color: #4F596A;
 }
 @media (max-width: 768px) {
-  .hero__subtitle {
+  .hero__subtitle, .instructor__left .instructor__subtitle {
     text-align: center;
     align-self: center;
   }
 }
 @media (max-width: 1024px) {
-  .hero__subtitle {
+  .hero__subtitle, .instructor__left .instructor__subtitle {
     font-size: 1.1rem;
     text-align: center;
   }
 }
 @media (max-width: 1440px) {
-  .hero__subtitle {
+  .hero__subtitle, .instructor__left .instructor__subtitle {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 1920px) {
-  .hero__subtitle {
+  .hero__subtitle, .instructor__left .instructor__subtitle {
     font-size: 1.3rem;
   }
 }
